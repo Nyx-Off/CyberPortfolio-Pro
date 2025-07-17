@@ -1,0 +1,39 @@
+# Robots.txt for bensalemdev.fr
+# Allow all web crawlers
+
+User-agent: *
+Allow: /
+Disallow: /cache/
+Disallow: /admin/
+Disallow: /*.php$
+Disallow: /scripts/
+Disallow: /audio/
+
+# Specific crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://bensalemdev.fr/sitemap.xml

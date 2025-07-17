@@ -1,0 +1,296 @@
+/* ===== Print Styles ===== */
+@media print {
+    /* Reset colors for print */
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    /* Page setup */
+    @page {
+        margin: 2cm;
+        size: A4;
+    }
+    
+    /* General elements */
+    body {
+        font-family: Georgia, serif;
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Arial, sans-serif;
+        page-break-after: avoid;
+        margin-top: 1em;
+    }
+    
+    h1 { font-size: 24pt; }
+    h2 { font-size: 18pt; }
+    h3 { font-size: 14pt; }
+    
+    p, ul, ol {
+        orphans: 3;
+        widows: 3;
+    }
+    
+    /* Hide unnecessary elements */
+    .navbar,
+    .menu-toggle,
+    .hero-bg,
+    .matrix-rain,
+    .boot-sequence,
+    .secret-link,
+    .audio-player,
+    .audio-visualization,
+    .contact-buttons,
+    .loader,
+    .loading-projects,
+    audio,
+    video,
+    iframe {
+        display: none !important;
+    }
+    
+    /* Header adjustments */
+    .hero {
+        height: auto;
+        padding: 0;
+        margin-bottom: 2em;
+        border-bottom: 2pt solid #000;
+    }
+    
+    .glitch,
+    .glitch::before,
+    .glitch::after {
+        animation: none !important;
+        text-shadow: none !important;
+    }
+    
+    .subtitle {
+        font-size: 14pt;
+    }
+    
+    /* Section adjustments */
+    .section {
+        page-break-inside: avoid;
+        padding: 1em 0;
+    }
+    
+    .section-title {
+        font-size: 16pt;
+        border-bottom: 1pt solid #000;
+        padding-bottom: 0.5em;
+    }
+    
+    .terminal-prompt {
+        display: none;
+    }
+    
+    /* Terminal window to simple box */
+    .terminal-window {
+        border: 1pt solid #000;
+        padding: 1em;
+        margin: 1em 0;
+    }
+    
+    .terminal-header {
+        display: none;
+    }
+    
+    /* Profile adjustments */
+    .profile-container {
+        display: block;
+    }
+    
+    .profile-image-wrapper {
+        float: left;
+        margin-right: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .profile-image {
+        width: 100px;
+        height: auto;
+        filter: none !important;
+    }
+    
+    /* Timeline adjustments */
+    .timeline {
+        padding-left: 0;
+    }
+    
+    .timeline::before,
+    .timeline-item::before {
+        display: none;
+    }
+    
+    .timeline-content {
+        border: 1pt solid #000;
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+    
+    .timeline-date {
+        font-weight: bold;
+    }
+    
+    /* Experience cards */
+    .experience-grid {
+        display: block;
+    }
+    
+    .experience-card {
+        border: 1pt solid #000;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        page-break-inside: avoid;
+    }
+    
+    .date-badge {
+        font-weight: bold;
+        float: right;
+    }
+    
+    /* Skills */
+    .skills-container {
+        display: block;
+    }
+    
+    .skill-category {
+        margin-bottom: 1em;
+        page-break-inside: avoid;
+    }
+    
+    .category-title {
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+    
+    .skill-tags {
+        display: inline;
+    }
+    
+    .skill-tag {
+        display: inline;
+        padding: 0;
+        margin-right: 0.5em;
+    }
+    
+    .skill-tag::after {
+        content: ", ";
+    }
+    
+    .skill-tag:last-child::after {
+        content: "";
+    }
+    
+    /* Languages */
+    .progress-bar {
+        display: none;
+    }
+    
+    .language-item {
+        display: inline;
+        margin-right: 1em;
+    }
+    
+    /* Interests */
+    .interest-list {
+        display: inline;
+    }
+    
+    .interest-item {
+        display: inline;
+        margin-right: 1em;
+    }
+    
+    .interest-item i {
+        display: none;
+    }
+    
+    /* Projects */
+    .projects-grid {
+        display: block;
+    }
+    
+    .project-card {
+        border: 1pt solid #000;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        page-break-inside: avoid;
+    }
+    
+    /* Links */
+    a {
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+        font-style: italic;
+    }
+    
+    a[href^="mailto"]:after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+        font-style: italic;
+    }
+    
+    /* Contact section */
+    .contact-section {
+        border-top: 2pt solid #000;
+        margin-top: 2em;
+        padding-top: 1em;
+    }
+    
+    .contact-text {
+        margin-bottom: 0.5em;
+    }
+    
+    /* Ensure important info is visible */
+    .prompt,
+    .var,
+    .value {
+        font-family: monospace;
+    }
+    
+    /* Add print-only information */
+    .hero::after {
+        content: "Portfolio imprimé le " attr(data-print-date);
+        display: block;
+        margin-top: 1em;
+        font-size: 10pt;
+        font-style: italic;
+    }
+}
+
+/* Add print button styles for screen */
+@media screen {
+    .print-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: var(--color-accent);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: var(--font-mono);
+        transition: all 0.3s;
+        z-index: 100;
+    }
+    
+    .print-button:hover {
+        background-color: var(--color-accent-dark);
+        transform: translateY(-2px);
+    }
+    
+    .print-button i {
+        margin-right: 5px;
+    }
+}

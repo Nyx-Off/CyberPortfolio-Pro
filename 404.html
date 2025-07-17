@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #0a0a0a;
+            color: #fff;
+            font-family: 'Share Tech Mono', monospace;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .error-container {
+            text-align: center;
+            z-index: 10;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .error-code {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 8rem;
+            font-weight: 900;
+            color: #dc143c;
+            text-shadow: 0 0 20px rgba(220, 20, 60, 0.5);
+            position: relative;
+            animation: glitch 2s infinite;
+        }
+        
+        @keyframes glitch {
+            0%, 100% { text-shadow: 0 0 20px rgba(220, 20, 60, 0.5); }
+            25% { text-shadow: -2px 0 #00ffff, 2px 0 #ff00ff; }
+            50% { text-shadow: 2px 0 #00ffff, -2px 0 #ff00ff; }
+            75% { text-shadow: 0 0 20px rgba(220, 20, 60, 0.5); }
+        }
+        
+        .error-message {
+            font-size: 1.5rem;
+            margin: 2rem 0;
+            color: #808080;
+        }
+        
+        .terminal-output {
+            background-color: rgba(26, 26, 26, 0.8);
+            border: 1px solid #333;
+            border-radius: 4px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 600px;
+            text-align: left;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .terminal-line {
+            margin-bottom: 0.5rem;
+        }
+        
+        .prompt {
+            color: #dc143c;
+        }
+        
+        .success {
+            color: #00ff00;
+        }
+        
+        .error {
+            color: #ff0000;
+        }
+        
+        .home-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background-color: transparent;
+            color: #dc143c;
+            text-decoration: none;
+            border: 2px solid #dc143c;
+            border-radius: 4px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .home-link:hover {
+            background-color: #dc143c;
+            color: #fff;
+            box-shadow: 0 0 20px rgba(220, 20, 60, 0.5);
+        }
+        
+        .matrix-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.1;
+        }
+        
+        /* ASCII Art */
+        .ascii-art {
+            font-size: 0.8rem;
+            line-height: 1;
+            color: #333;
+            margin-bottom: 2rem;
+            white-space: pre;
+            font-family: monospace;
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+            
+            .error-message {
+                font-size: 1.2rem;
+            }
+            
+            .terminal-output {
+                margin: 1rem;
+                padding: 1rem;
+                font-size: 0.8rem;
+            }
+            
+            .ascii-art {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas class="matrix-bg" id="matrix"></canvas>
+    
+    <div class="error-container">
+        <pre class="ascii-art">
+____________/\\\________/\\\\\\\_______________/\\\____        
+  __________/\\\\\______/\\\/////\\\___________/\\\\\____       
+    ________/\\\/\\\_____/\\\____\//\\\________/\\\/\\\____      
+      ______/\\\/\/\\\____\/\\\_____\/\\\______/\\\/\/\\\____     
+        ____/\\\/__\/\\\____\/\\\_____\/\\\____/\\\/__\/\\\____    
+           __/\\\\\\\\\\\\\\\\_\/\\\_____\/\\\__/\\\\\\\\\\\\\\\\_   
+             _\///////////\\\//__\//\\\____/\\\__\///////////\\\//__  
+               ___________\/\\\_____\///\\\\\\\/_____________\/\\\____ 
+                 ___________\///________\///////_______________\///_____
+        </pre>
+        
+        <div class="error-code">404</div>
+        <div class="error-message">Page Not Found</div>
+        
+        <div class="terminal-output">
+            <div class="terminal-line">
+                <span class="prompt">root@portfolio:~$</span> ls -la /requested/page
+            </div>
+            <div class="terminal-line error">
+                ls: cannot access '/requested/page': No such file or directory
+            </div>
+            <div class="terminal-line">
+                <span class="prompt">root@portfolio:~$</span> find / -name "page" 2>/dev/null
+            </div>
+            <div class="terminal-line">
+                <span class="success">searching...</span>
+            </div>
+            <div class="terminal-line error">
+                No results found.
+            </div>
+            <div class="terminal-line">
+                <span class="prompt">root@portfolio:~$</span> echo "The page you're looking for doesn't exist in this reality."
+            </div>
+            <div class="terminal-line">
+                The page you're looking for doesn't exist in this reality.
+            </div>
+        </div>
+        
+        <a href="/" class="home-link">Return to Home</a>
+    </div>
+    
+    <script>
+        // Matrix rain effect
+        const canvas = document.getElementById('matrix');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+        const matrixArray = matrix.split("");
+        
+        const fontSize = 10;
+        const columns = canvas.width / fontSize;
+        
+        const drops = [];
+        for (let x = 0; x < columns; x++) {
+            drops[x] = 1;
+        }
+        
+        function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.04)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.fillStyle = '#dc143c';
+            ctx.font = fontSize + 'px monospace';
+            
+            for (let i = 0; i < drops.length; i++) {
+                const text = matrixArray[Math.floor(Math.random() * matrixArray.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+        
+        setInterval(draw, 35);
+        
+        // Resize handler
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>

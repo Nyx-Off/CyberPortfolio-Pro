@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samy Bensalem | Cybersecurity Professional</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio de Samy Bensalem, Administrateur Réseaux et Expert en Cybersécurité. Découvrez mes projets, compétences et expériences professionnelles.">
+    <meta name="keywords" content="Samy Bensalem, cybersécurité, administrateur réseaux, développeur, portfolio, sécurité informatique, pentest, Linux, Python">
+    <meta name="author" content="Samy Bensalem">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bensalemdev.fr/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bensalemdev.fr/">
+    <meta property="og:title" content="Samy Bensalem | Cybersecurity Professional">
+    <meta property="og:description" content="Portfolio de Samy Bensalem, Administrateur Réseaux et Expert en Cybersécurité.">
+    <meta property="og:image" content="https://bensalemdev.fr/images/og-image.jpg">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bensalemdev.fr/">
+    <meta property="twitter:title" content="Samy Bensalem | Cybersecurity Professional">
+    <meta property="twitter:description" content="Portfolio de Samy Bensalem, Administrateur Réseaux et Expert en Cybersécurité.">
+    <meta property="twitter:image" content="https://bensalemdev.fr/images/twitter-image.jpg">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#dc143c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="SB Portfolio">
+    
+    <!-- Icons -->
+    <link rel="icon" href="images/red-hat.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon-16x16.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/print.css" media="print">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Samy Bensalem",
+        "jobTitle": "Administrateur Réseaux & Expert Cybersécurité",
+        "url": "https://bensalemdev.fr",
+        "email": "contact@bensalemdev.fr",
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "ESIEE-IT Pontoise"
+        },
+        "knowsAbout": ["Cybersécurité", "Réseaux", "Linux", "Python", "Développement Web"],
+        "sameAs": [
+            "https://github.com/yourusername",
+            "https://linkedin.com/in/yourusername"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Terminal Boot Sequence -->
+    <div id="boot-sequence" class="boot-sequence">
+        <div class="terminal-text"></div>
+    </div>
+
+    <!-- Matrix Rain Background -->
+    <canvas id="matrix-rain" class="matrix-rain"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">&lt;SB/&gt;</span>
+                <span class="cursor">_</span>
+            </div>
+            
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-item">./about</a></li>
+                <li><a href="#education" class="nav-item">./education</a></li>
+                <li><a href="#experience" class="nav-item">./experience</a></li>
+                <li><a href="#skills" class="nav-item">./skills</a></li>
+                <li><a href="#projects" class="nav-item">./projects</a></li>
+                <li><a href="#contact" class="nav-item">./contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero" id="hero">
+        <div class="glitch-container">
+            <h1 class="glitch" data-text="Samy Bensalem">Samy Bensalem</h1>
+            <div class="subtitle">
+                <span class="typing-text">root@cybersec:~# </span>
+                <span class="role" id="role-text"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="scanline"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="terminal-prompt">$</span> whoami
+            </h2>
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-button red"></span>
+                    <span class="terminal-button yellow"></span>
+                    <span class="terminal-button green"></span>
+                    <span class="terminal-title">about.sh</span>
+                </div>
+                <div class="terminal-content">
+                    <div class="profile-container">
+                        <div class="profile-image-wrapper">
+                            <img src="images/profile.jpg" alt="Samy Bensalem" class="profile-image">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="profile-info">
+                            <p class="info-line"><span class="prompt">></span> Administrateur réseaux spécialisé en cybersécurité</p>
+                            <p class="info-line"><span class="prompt">></span> Passionné par la programmation et la culture japonaise</p>
+                            <p class="info-line"><span class="prompt">></span> Intéressé par les nouvelles technologies</p>
+                            <br>
+                            <p class="info-line"><span class="var">age</span> = <span class="value">24</span>;</p>
+                            <p class="info-line"><span class="var">email</span> = [<span class="value">"samy.bensalem@etik.com"</span>, <span class="value">"contact@bensalemdev.com"</span>];</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section dark">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="terminal-prompt">$</span> cat education.log
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 - maintenant</div>
+                    <div class="timeline-content">
+                        <h3>Master 2 Cybersécurité - E3IN</h3>
+                        <p>ESIEE-IT Pontoise</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>Master 1 Cybersécurité - E3IN</h3>
+                        <p>ESIEE-IT Pontoise</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor informatique L3 - Cybersécurité</h3>
+                        <p>ESIEE-IT Pontoise</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <div class="timeline-content">
+                        <h3>Ingénieur Réseaux & Sécurité</h3>
+                        <p>ESIEE-IT PONTOISE</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>BTS Systèmes Numériques Informatique et Réseaux</h3>
+                        <p>ESIEE-IT PONTOISE</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>Baccalauréat STI2D Option SIN</h3>
+                        <p>Jean Perrin Saint-Ouen-l'Aumône</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="terminal-prompt">$</span> grep -r "experience" ./career
+            </h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="card-header">
+                        <h3>Administrateur Réseaux & Sécurité</h3>
+                        <span class="date-badge">2023 - 2025</span>
+                    </div>
+                    <p class="company">BIOFUTUR Cergy 95</p>
+                    <ul class="task-list">
+                        <li>Gestion du parc informatique</li>
+                        <li>Déploiement de solutions de cybersécurité</li>
+                        <li>Serveurs de gestion de sauvegardes pour automate</li>
+                        <li>Mise en place d'une plateforme de ticketing (GLPI)</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <div class="card-header">
+                        <h3>Administrateur Réseaux & Sécurité</h3>
+                        <span class="date-badge">2022 - 2023</span>
+                    </div>
+                    <p class="company">BIOFUTUR Cergy 95</p>
+                    <ul class="task-list">
+                        <li>Gestion du parc informatique</li>
+                        <li>Déploiement de solutions de cybersécurité</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <div class="card-header">
+                        <h3>Développeur web</h3>
+                        <span class="date-badge">2021 - 2022</span>
+                    </div>
+                    <p class="company">BIOFUTUR Cergy 95</p>
+                    <ul class="task-list">
+                        <li>Refonte du site web existant</li>
+                        <li>Sécurisation des accès et des comptes utilisateurs</li>
+                        <li>Gestion et mise à jour du site web</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <div class="card-header">
+                        <h3>Développeur web</h3>
+                        <span class="date-badge">2020 - 2021</span>
+                    </div>
+                    <p class="company">BERIM Pantin, 95520</p>
+                    <ul class="task-list">
+                        <li>Conception du site web</li>
+                        <li>Ajout de modules (offres d'emplois, etc.)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section dark">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="terminal-prompt">$</span> ./skills --list
+            </h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-brain"></i> Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Esprit Critique</span>
+                        <span class="skill-tag">Résolutions de problèmes</span>
+                        <span class="skill-tag">Sens du service</span>
+                        <span class="skill-tag">Créativité</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-code"></i> Hard Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Active Directory</span>
+                        <span class="skill-tag">Shell/Bash</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">HTML/CSS/JS</span>
+                        <span class="skill-tag">PHP/SQL</span>
+                        <span class="skill-tag">Modélisation 3D</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-language"></i> Langues</h3>
+                    <div class="language-bars">
+                        <div class="language-item">
+                            <span class="lang-name">Anglais</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%">B1/B2</div>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span class="lang-name">Espagnol</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 50%">A2/B1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-heart"></i> Centres d'intérêt</h3>
+                    <div class="interest-list">
+                        <span class="interest-item"><i class="fas fa-terminal"></i> Programmation</span>
+                        <span class="interest-item"><i class="fas fa-microchip"></i> Nouvelles technologies</span>
+                        <span class="interest-item"><i class="fas fa-bullseye"></i> Tir à l'arc</span>
+                        <span class="interest-item"><i class="fas fa-torii-gate"></i> Culture japonaise</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="terminal-prompt">$</span> play testimonial.wav
+            </h2>
+            <div class="testimonial-container">
+                <div class="testimonial-image-wrapper">
+                    <img src="images/podcast.webp" alt="Témoignage" class="testimonial-img">
+                </div>
+                <div class="audio-player">
+                    <div class="audio-visualization" id="audio-viz"></div>
+                    <audio controls id="testimonial-audio">
+                        <source src="audio/Profil_Samy_Bensalem.wav" type="audio/wav">
+                        Votre navigateur ne supporte pas l'élément audio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section dark">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="terminal-prompt">$</span> git log --oneline
+            </h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be loaded here -->
+                <div class="loading-projects">
+                    <div class="loader"></div>
+                    <p>Fetching repositories...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="terminal-prompt">$</span> ssh contact@bensalemdev.fr
+            </h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    <span class="prompt">></span> Establishing connection...
+                </p>
+                <p class="contact-text">
+                    <span class="prompt">></span> Ready to collaborate on your next project
+                </p>
+                <div class="contact-buttons">
+                    <a href="mailto:contact@bensalemdev.fr" class="contact-btn primary">
+                        <i class="fas fa-envelope"></i> Send Email
+                    </a>
+                    <a href="mailto:samy.bensalem@etik.com" class="contact-btn secondary">
+                        <i class="fas fa-briefcase"></i> Professional Email
+                    </a>
+                </div>
+                
+                <!-- Easter Egg -->
+                <a href="https://www.perdu.com/" class="secret-link" target="_blank">
+                    <i class="fas fa-terminal"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/github-projects.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful:', registration.scope);
+                        
+                        // Check for updates periodically
+                        setInterval(() => {
+                            registration.update();
+                        }, 60000); // Check every minute
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed:', err);
+                    });
+            });
+            
+            // Listen for messages from service worker
+            navigator.serviceWorker.addEventListener('message', event => {
+                if (event.data && event.data.type === 'PROJECTS_UPDATED') {
+                    // Refresh projects display if on projects section
+                    const projectsContainer = document.getElementById('projects-container');
+                    if (projectsContainer && event.data.data) {
+                        // Trigger reload of projects
+                        window.loadProjects && window.loadProjects();
+                    }
+                }
+            });
+        }
+        
+        // Add print date for print version
+        document.querySelector('.hero').setAttribute('data-print-date', new Date().toLocaleDateString('fr-FR'));
+    </script>
+    
+    <!-- Analytics (replace with your tracking code) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+</body>
+</html>

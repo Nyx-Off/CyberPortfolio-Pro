@@ -1,0 +1,109 @@
+{
+    "name": "Samy Bensalem - Cybersecurity Portfolio",
+    "short_name": "SB Portfolio",
+    "description": "Portfolio professionnel de Samy Bensalem, Administrateur Réseaux et Expert en Cybersécurité",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0a0a",
+    "theme_color": "#dc143c",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/images/icon-72x72.png",
+        "sizes": "72x72",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/images/icon-96x96.png",
+        "sizes": "96x96",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/images/icon-128x128.png",
+        "sizes": "128x128",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/images/icon-144x144.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/images/icon-152x152.png",
+        "sizes": "152x152",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/images/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/images/icon-384x384.png",
+        "sizes": "384x384",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/images/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable any"
+      }
+    ],
+    "categories": ["portfolio", "cybersecurity", "networking", "developer"],
+    "screenshots": [
+      {
+        "src": "/images/screenshot-desktop.png",
+        "sizes": "1920x1080",
+        "type": "image/png",
+        "form_factor": "wide"
+      },
+      {
+        "src": "/images/screenshot-mobile.png",
+        "sizes": "390x844",
+        "type": "image/png",
+        "form_factor": "narrow"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Projets",
+        "short_name": "Projets",
+        "description": "Voir mes projets GitHub",
+        "url": "/#projects",
+        "icons": [
+          {
+            "src": "/images/icon-96x96.png",
+            "sizes": "96x96"
+          }
+        ]
+      },
+      {
+        "name": "Contact",
+        "short_name": "Contact",
+        "description": "Me contacter",
+        "url": "/#contact",
+        "icons": [
+          {
+            "src": "/images/icon-96x96.png",
+            "sizes": "96x96"
+          }
+        ]
+      }
+    ],
+    "lang": "fr-FR",
+    "dir": "ltr",
+    "scope": "/",
+    "features": [
+      "Cross Platform",
+      "fast",
+      "simple"
+    ]
+  }
