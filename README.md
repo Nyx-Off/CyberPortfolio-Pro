@@ -11,6 +11,9 @@ Un portfolio professionnel moderne avec une esthétique cybersécurité, conçu 
 
 **CyberPortfolio Pro** est un portfolio web interactif avec une interface terminal/Matrix, intégrant des animations avancées et une récupération automatique des projets GitHub. Parfait pour les administrateurs réseaux, experts en cybersécurité et développeurs souhaitant présenter leurs compétences de manière unique.
 
+![Aperçu du Portfolio](https://github.com/Nyx-Off/CyberPortfolio-Pro/blob/main/portfolio.gif)
+
+
 ### ✨ Caractéristiques principales
 
 - 🎨 **Design Cyberpunk** : Interface terminal avec effet Matrix rain
