@@ -300,7 +300,7 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
 // Configuration
-$github_token = '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'; // Optional: Add your GitHub personal access token
+$github_token = ''; // Optional: Add your GitHub personal access token
 
 // Liste des projets à afficher
 $projectLinks = [
